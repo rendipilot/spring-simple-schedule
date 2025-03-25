@@ -20,4 +20,9 @@ public class ScheduledTasks {
 		log.info("The time is now {}", dateFormat.format(new Date()));
 	}
 
+	@Scheduled(fixedRate = 12000)
+	public void reportSecond(){
+		log.info("all system active");
+	}
+
 }
