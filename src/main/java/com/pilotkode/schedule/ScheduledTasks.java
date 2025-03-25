@@ -16,6 +16,7 @@ public class ScheduledTasks {
 
 	@Scheduled(fixedRate = 5000)
 	public void reportCurrentTime() {
+		log.info("Author : rendy eka febriyanto");
 		log.info("The time is now {}", dateFormat.format(new Date()));
 	}
 
